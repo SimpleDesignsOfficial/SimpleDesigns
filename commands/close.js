@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
  
     } else {
  
-        return message.delete(7500) && (message.channel.send("Error: Dit command kan alleen gebruikt worden in een ticket channel!").then(m => m.delete(7500)));
+        return message.channel.send("Error: Dit command kan alleen gebruikt worden in een ticket channel!");
  
     }
 
