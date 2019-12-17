@@ -10,7 +10,9 @@ module.exports.run = async (bot, message, args) => {
         .addField("/ticket <onderwerp>", "Met dit command kan je een prive kanaal maken met alle medewerkers!")
         .addField("/idee <idee>", "Met dit command kan je een idee opgeven waar wij veel aan hebben!")
 
-    message.channel.send(helpEmbed);
+    message.channel.send("Het help menu met alle commands is in je dm gestuurt!");
+    
+    message.author.send(helpEmbed);
 
 };
 
